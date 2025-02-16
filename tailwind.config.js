@@ -6,7 +6,12 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}", // For Components
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero':"url('/images/hero.png')",
+        'technology':"url('/images/image2.png')",
+      }
+    },
   },
   plugins: [],
 };

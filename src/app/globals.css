@@ -1,3 +1,46 @@
+@font-face {
+    font-family: "Outfit-Regular"; /* 400 */
+    src: url(../../public/fonts/Outfit-Regular.ttf) format("truetype");
+  }
+
+@font-face {
+    font-family: "Outfit-Bold"; /* 600 */
+    src: url(../../public/fonts/Outfit-Bold.ttf) format("truetype");
+  }
+
+@font-face {
+    font-family: "Inter-Regular"; /* 400 */
+    src: url(../../public/fonts/Inter_18pt-Regular.ttf) format("truetype");
+  }
+
+@font-face {
+    font-family: "Inter-Bold"; /* 600 */
+    src: url(../../public/fonts/Inter_18pt-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Inter-Medium"; /* 500 */
+    src: url(../../public/fonts/Inter_18pt-Medium.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Quicksand-Bold"; /* 600 */
+    src: url(../../public/fonts/Quicksand-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Roberto-Regular"; /* 400 */
+    src: url(../../public/fonts/Roboto_Condensed-Regular.ttf) format("truetype");
+
+  }@font-face {
+    font-family: "Roberto-Bold"; /* 00 */
+    src: url(../../public/fonts/Roboto_Condensed-Bold.ttf) format("truetype");
+  }
+
+  .custom-container{
+    width : 80% !important
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
