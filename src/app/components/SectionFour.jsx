@@ -21,39 +21,44 @@ export default function SectionFour() {
   ];
 
   return (
-    <section className="py-12 flex justify-center container mx-auto">
-      <div className="w-full flex flex-col custom-container">
-        {sections.map((section, index) => (
-          <div key={index} className="flex items-start gap-4">
-            {/* Left Side - Image (Stacked properly) */}
-            <div className="flex-shrink-0">
-              <img
-                src={section.image}
-                alt={section.title}
-                className="w-[312px] h-[233px] object-cover shadow-md"
-              />
-            </div>
+    <section className="py-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="flex flex-col">
+          {sections.map((section, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row items-start gap-6"
+            >
+              {/* Left Side - Image (Responsive) */}
+              <div className="w-full md:w-[312px] flex-shrink-0">
+                <img
+                  src={section.image}
+                  alt={section.title}
+                  className="w-full h-[233px] object-cover shadow-md rounded-lg"
+                />
+              </div>
 
-            {/* Right Side - Heading + Paragraph */}
-            <div className="flex-1">
-              <h2 className="text-[24px] font-[Outfit-Regular] text-[#121212] leading-[30.24px]">
-                {section.title}
-              </h2>
-              <p className="text-[#7C7C7C] text-[Inter-Regular] text-[16px] leading-[24.96px]">
-                {section.description}
-              </p>
+              {/* Right Side - Heading + Paragraph */}
+              <div className="flex-1">
+                <h2 className="text-[24px] font-[Outfit-Regular] text-[#121212] leading-[30.24px]">
+                  {section.title}
+                </h2>
+                <p className="text-[#7C7C7C] font-[Inter-Regular] text-[16px] leading-[24.96px]">
+                  {section.description}
+                </p>
+              </div>
             </div>
+          ))}
+
+          {/* Final Paragraph at Bottom */}
+          <div className="text-center mx-auto pt-12">
+            <p className="text-[20px] text-[#5E555C] font-[Inter-Regular] border border-green-300 rounded-full px-6 py-3">
+              Through these rigorous methodologies, Transfective guarantees that
+              your software localization projects are executed with precision,
+              ensuring your products resonate with and are accessible to users
+              worldwide.
+            </p>
           </div>
-        ))}
-
-        {/* Final Paragraph at Bottom */}
-        <div className="text-center mx-auto pt-12">
-          <p className="text-[20px] text-[#5E555C] font-[Inter-Regular] border border-green-300 rounded-full px-[15px] py-[10px]">
-            Through these rigorous methodologies, Transfective guarantees that
-            your software localization projects are executed with precision,
-            ensuring your products resonate with and are accessible to users
-            worldwide.
-          </p>
         </div>
       </div>
     </section>
